@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    background-color: #FFF0E5;
+}
+
+.standard {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    white-space: nowrap;
+    padding: 10px;
+    border-radius: 2px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 2vw;
+    /*Might wanna change later*/
+}
+
+.standard:hover {
+    box-shadow: -10px 10px black;
+    transform: translate(5px, -5px);
+    transition: 0.2s;
+}
+
+.mid {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.red {
+    background-color: #8c2626 !important;
+    color: white !important;
+}
+
+.green {
+    background-color: #1e4214 !important;
+    color: white !important;
+}
+
+#main {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: calc(50% - 70px);
+    height: calc(40% - 70px);
+}
+
+#log {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    width: calc(50% - 70px);
+    height: calc(100% - 80px);
+    font-size: 15px;
+}
+
+#clientInput {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    height: calc(60% - 70px);
+    width: calc(50% - 70px);
+    text-align: center;
+}
+
+.style-button {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    padding: 7px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.style-button:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 8px;
+    transition: 0.2s;
+}
+
+#top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    min-height: 50px;
+}
+
+#top input {
+    border: 1px solid black;
+    padding: 3px;
+    width: 40%;
+}
+
+#top .mid {
+    width: 80%;
+}
+
+#top button {
+    width: 40%;
+}
+
+#bottom {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    min-height: 150px;
+}
+
+#bottom p {
+    padding: 1.5% 0;
+}
+
+#bottom button {
+    width: 40%;
+    height: 20%;
+}
+
+#log {
+    text-align: center;
+    font-size: 1vw;
+}
+
+#mobile-space {
+    display: none;
+}
+
+@media only screen and (max-width: 850px) {
+
+    .standard {
+        font-size: min(4vw, 24px); 
+    }
+
+    #main {
+        width: calc(100% - 80px);
+        height: 200px;
+    }
+
+    #log {
+        top: 550px;
+        left: 30px;
+        width: calc(100% - 80px);
+        height: 400px;
+        font-size: 1.8vw;
+    }
+
+    #clientInput {
+        width: calc(100% - 80px);
+        height: 200px;
+        top: 290px;
+    }
+
+    #top button {
+        font-size: 8px;
+        width: 50%;
+    }
+
+    #top input {
+        width: 50%
+    }
+
+    #bottom button {
+        width: 40%;
+        height: 20%;
+    }
+
+    #mobile-space {
+        position: absolute;
+        top: 970px;
+        height: 30px;
+        width: 100%;
+        display: block;
+    }
+
+}

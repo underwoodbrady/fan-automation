@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+
+    <section id="main" class="standard">
+        <div id="outsideData">
+            <p><span class="bold">Outside Temp:</span> loading... </p>
+        </div>
+        <div id="insideData">
+            <p><span class="bold">Inside Temp:</span> loading... </p>
+        </div>
+        <div id="threshold">
+            <p><span class="bold">Threshold:</span> loading... </p>
+        </div>
+        <div id="fans">
+            <p><span class="bold">Fans on?</span> loading... </p>
+        </div>
+        <p>Last Updated: <span id="time"></span></p>
+
+    </section>
+
+    <section id="clientInput" class="standard">
+
+        <div id="top">
+            <div class="mid">
+                <input id="turnOffTemp" type="text" maxlength="2">
+
+                <button id="setTurnOffTemp" class="style-button">Low Temp Threshold</button>
+            </div>
+        </div>
+
+        <div id="bottom">
+            <div id="fansInfo">
+
+                <p>Fans</p>
+
+            </div>
+
+            <button id="turnFansOff" class="style-button">Off</button>
+
+            <button id="turnFansOn" class="style-button">On</button>
+
+            <div id="updatesInfo">
+
+                <p>Auto Updates</p>
+
+            </div>
+
+            <button id="stopUpdates" class="style-button">Off</button>
+
+            <button id="startUpdates" class="style-button">On</button>
+        </div>
+
+
+    </section>
+
+    <section id="log" class="standard">
+
+    </section>
+    
+    <div id="mobile-space">
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "fan-automation",
+  "version": "0.5.0",
+  "description": "fan automation with node.js",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "node": "^16.1.0",
+    "node-addon-api": "^3.1.0",
+    "socket.io": "^4.0.2",
+    "tplink-smarthome-api": "^3.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brady Underwood",
+  "license": "ISC"
+}
